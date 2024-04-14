@@ -1,0 +1,70 @@
+
+/* اي حاجة اكبر من 1400 */
+/* ================> container*/
+@media screen and (min-width:1400px) {
+    .section-box ,
+    .section-box-left {
+        width: 50%;
+
+    }
+}
+
+
+/* اي حاجة اقل من 1400 */
+@media screen and (max-width:1400px) {
+    .section-box ,
+    .section-box-left {
+        width: 50%;
+
+    }
+}
+
+/* اي حاجة اقل من 768 */
+@media screen and (max-width:768px) {
+
+    .section-box ,
+    .section-box-left {
+        flex-wrap: wrap;
+        width: 100%;
+
+    }
+
+}
+
+/* اي حاجة اقل من 1200 */
+@media screen and (max-width:1200px) {
+
+}
+
+/* اي حاجة اقل من 992 */
+@media screen and (max-width:992px) {
+
+}
+
+
+
+/* اي حاجة اقل من 576 */
+@media screen and (max-width:576px) {
+
+}
+
+/* اي حاجة اقل من 1200 */
+@media screen and (max-width:1200px) {
+
+    
+}
+
+
+/* اي حاجة اكبر من 1200 */
+@media screen and (min-width:1200px) {
+ 
+}
+
+@media screen and (max-width:992px) {
+ 
+    
+}
+
+@media screen and (min-width:400px) {
+ 
+}

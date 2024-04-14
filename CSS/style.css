@@ -1,0 +1,415 @@
+* {
+    list-style: none;
+}
+body {
+    font-family: system-ui
+    -apple-system
+    "Segoe UI"
+    Roboto
+    "Helvetica Neue"
+    "Noto Sans"
+    "Liberation Sans"
+    Arial
+    sans-serif
+    "Apple Color Emoji"
+    "Segoe UI Emoji"
+    "Segoe UI Symbol"
+    "Noto Color Emoji";
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* <!-- =============start Home============== --> */
+header {
+    background-image: url(../DevFolio-images/hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+header .overlayer {
+    background-color: rgba(0, 0, 0, 0.482);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+/* header h1 {
+    font-size: 72px; 
+    font-weight: 600;
+} */
+
+header h3 {
+    position: relative;
+    text-align: center;
+}
+
+header h3::after {
+    content: '';
+    animation: typing 4s infinite alternate;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    
+    /* padding:0px 5px */
+}
+
+/* Designer */
+
+
+@keyframes typing {
+    0% {
+        content: 'd|';
+    }
+
+    2% {
+        content: 'de|';
+    }
+
+    4% {
+        content: 'des|';
+    }
+
+    6% {
+        content: 'desi';
+    }
+
+    8% {
+        content: 'desig';
+    }
+
+    10% {
+        content: 'desige';
+    }
+
+    12% {
+        content: 'desigen|';
+    }
+
+    14% {
+        content: 'desiger|';
+    }
+
+    16% {
+        content: 'desige|';
+    }
+
+    18% {
+        content: 'desig';
+    }
+
+    20% {
+        content: 'desi|';
+    }
+
+    22% {
+        content: 'des|';
+    }
+/* Developer */
+    24% {
+        content: 'de|';
+    }
+
+    26% {
+        content: 'deve|';
+    }
+
+    29% {
+        content: 'develo|';
+    }
+    32% {
+        content: 'developer|';
+    }
+    32% {
+        content: 'develo|';
+    }
+    32% {
+        content: 'dev|';
+    }
+    /* Freelancer */
+    34% {
+        content: 'Fr|';
+    }
+
+    36% {
+        content: 'Free|';
+    }
+
+    38% {
+        content: 'Freelan|';
+    }
+    40% {
+        content: 'Freelancer|';
+    }
+    42% {
+        content: 'Freelan|';
+    }
+    44% {
+        content: 'Free|';
+    }
+    46% {
+        content: 'F|';
+    }
+
+    /* Photographer */
+
+    48% {
+        content: 'Ph|';
+    }
+
+    50% {
+        content: 'Phot|';
+    }
+
+    52% {
+        content: 'Photogr|';
+    }
+    54% {
+        content: 'Photograph|';
+    }
+    56% {
+        content: 'Photographer|';
+    }
+    58% {
+        content: 'Photogra|';
+    }
+    60% {
+        content: 'Photo|';
+    }
+    60% {
+        content: 'Pho|';
+    }
+    72% {
+        content: 'P|';
+    }
+}
+
+header nav ul li a{
+    position: relative;
+}
+
+header nav ul li a::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #FFF;
+    left: 0;
+    bottom: -3px;
+    transition: width 1s;
+}
+
+header nav ul li a:hover {
+    color: #000;
+}
+
+header nav ul li a:hover::before {
+    width: 100%;
+}
+
+/* <!-- =============End Home============== --> */
+
+/* <!-- =============start about============== --> */
+
+.text-befor {
+    position: relative;
+    padding: 10px;
+}
+
+.text-befor::after {
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: #0078ff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+
+/* <!-- =============End about============== --> */
+
+/* <!-- =============start SERVICES============== --> */
+
+.services-title p {
+    position: relative;
+    padding: 10px;
+}
+
+.services-title p::before {
+    content: "";
+    width: 50px;
+    height: 5px;
+    background-color: #0078ff;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 10px;
+    border: 10px solid #0078ff;
+}
+
+.inner-box:hover .icon {
+    background-color: #0078ff;
+    border: 10px solid rgba(98, 161, 238, 0.365);
+    color: #FFF;
+}
+
+/* <!-- =============End SERVICES============== --> */
+
+/* <!-- =============start Icon============== --> */
+
+.section-icon {
+    background-image: url(../DevFolio-images/counters-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    padding: 100px;
+}
+
+.section-icon .icon-over {
+    position: absolute;
+    background-color: rgba(0, 119, 255, 0.679);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.icon-box-sec {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 10px;
+    border: 10px solid rgba(255, 255, 255, 0.439);
+}
+
+/* <!-- =============End Icon============== --> */
+
+/* <!-- =============start PORTFOLIO============== --> */
+
+.portfolio .inner-box{
+    transition: 0.5ms transform;
+}
+
+.portfolio .inner-box:hover img{
+    transform: scale(1.5);
+}
+
+/* <!-- =============End PORTFOLIO============== --> */
+
+/* <!--=============== Start TESTIMONIALS ==================--> */
+
+.testimonial {
+    background-image: url(../DevFolio-images/overlay-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    padding: 100px;
+}
+
+.testimonial .over {
+    position: absolute;
+    background-color: rgba(0, 119, 255, 0.679);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.testimonial img {
+    border-radius: 50%;
+}
+
+/* <!--=============== End TESTIMONIALS ==================--> */
+
+/* <!--=============== Start BLOG ==================--> */
+
+.info-icon {
+    border-top: 3px solid #EEE;
+    padding-top: 5px;
+}
+
+.img-info img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* <!--=============== End BLOG ==================--> */
+
+/* <!--=============== Start Contact ==================--> */
+
+.contact {
+    background-image: url(../DevFolio-images/overlay-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    padding: 100px;
+}
+
+.contact .over-img {
+    position: absolute;
+    background-color: rgba(0, 119, 255, 0.679);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.contact h2 {
+    position: relative;
+}
+
+.contact h2::before {
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: #0078ff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.contact .soe {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 4px solid #0078ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* <!--=============== End Contact ==================--> */
+
+.up {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    bottom: 20px;
+    right: 20px;
+}
